@@ -1,0 +1,12 @@
+eylul@kia:~/Desktop/BBM405/hw2$ z3 -smt2 3SAT_1.smt
+sat
+(
+  (define-fun A () Bool
+    false)
+  (define-fun D () Bool
+    true)
+  (define-fun B () Bool
+    true)
+  (define-fun C () Bool
+    true)
+)

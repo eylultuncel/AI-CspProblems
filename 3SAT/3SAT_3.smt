@@ -1,0 +1,18 @@
+(set-logic QF_UF)
+(set-option :produce-models true)
+(declare-const A Bool)
+(declare-const B Bool)
+(declare-const C Bool)
+(declare-const D Bool)
+(declare-const E Bool)
+(assert
+	(and
+		(or A B (not C) )
+		(or (not B) D E )
+		(or (not A) B C ) 
+		(or B D (not E) )	
+	) 
+)
+(check-sat)
+(get-model)
+(exit)

@@ -1,0 +1,50 @@
+(set-logic QF_LIA)
+(set-option :produce-models true)
+(declare-const A1 Int)
+(declare-const A2 Int)
+(declare-const A3 Int)
+(declare-const A4 Int)
+(declare-const B1 Int)
+(declare-const B2 Int)
+(declare-const B3 Int)
+(declare-const B4 Int)
+(declare-const C1 Int)
+(declare-const C2 Int)
+(declare-const C3 Int)
+(declare-const C4 Int)
+(declare-const D1 Int)
+(declare-const D2 Int)
+(declare-const D3 Int)
+(declare-const D4 Int)
+
+(assert ( and (<= A1 4) (>= A1 1) (<= A2 4) (>= A2 1) ))
+(assert ( and (<= A3 4) (>= A3 1) (<= A4 4) (>= A4 1) ))
+(assert ( and (<= B1 4) (>= B1 1) (<= B2 4) (>= B2 1) ))
+(assert ( and (<= B3 4) (>= B3 1) (<= B4 4) (>= B4 1) ))
+(assert ( and (<= C1 4) (>= C1 1) (<= C2 4) (>= C2 1) ))
+(assert ( and (<= C3 4) (>= C3 1) (<= C4 4) (>= C4 1) ))
+(assert ( and (<= D1 4) (>= D1 1) (<= D2 4) (>= D2 1) ))
+(assert ( and (<= D3 4) (>= D3 1) (<= D4 4) (>= D4 1) ))
+
+(assert (distinct A1 A2 B1 B2))
+(assert (distinct A3 A4 B3 B4))
+(assert (distinct C1 C2 D1 D2))
+(assert (distinct C3 C4 D3 D4))
+
+(assert (distinct A1 A2 A3 A4))
+(assert (distinct B1 B2 B3 B4))
+(assert (distinct C1 C2 C3 C4))
+(assert (distinct D1 D2 D3 D4))
+
+(assert (distinct A1 B1 C1 D1))
+(assert (distinct A2 B2 C2 D2))
+(assert (distinct A3 B3 C3 D3))
+(assert (distinct A4 B4 C4 D4))
+
+(check-sat)
+(get-model)
+(exit)
+
+
+
+

@@ -1,0 +1,37 @@
+eylul@kia:~/Desktop/BBM405/hw2/Z3/sudoku$ z3 -smt2 sudoku.smt
+sat
+(
+  (define-fun A1 () Int
+    4)
+  (define-fun D1 () Int
+    3)
+  (define-fun C4 () Int
+    3)
+  (define-fun D4 () Int
+    4)
+  (define-fun A2 () Int
+    2)
+  (define-fun C1 () Int
+    2)
+  (define-fun D2 () Int
+    1)
+  (define-fun B1 () Int
+    1)
+  (define-fun D3 () Int
+    2)
+  (define-fun C2 () Int
+    4)
+  (define-fun B4 () Int
+    2)
+  (define-fun A4 () Int
+    1)
+  (define-fun B3 () Int
+    4)
+  (define-fun B2 () Int
+    3)
+  (define-fun C3 () Int
+    1)
+  (define-fun A3 () Int
+    3)
+)
+

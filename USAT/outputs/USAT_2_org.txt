@@ -1,0 +1,12 @@
+eylul@kia:~/Desktop/BBM405/hw2/Z3/USAT$ z3 -smt2 USAT_2_org.smt
+sat
+(
+  (define-fun A () Bool
+    false)
+  (define-fun D () Bool
+    false)
+  (define-fun B () Bool
+    false)
+  (define-fun C () Bool
+    false)
+)

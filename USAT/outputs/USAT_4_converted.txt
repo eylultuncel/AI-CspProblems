@@ -1,0 +1,15 @@
+eylul@kia:~/Desktop/BBM405/hw2/Z3/USAT_CONVERTED$ z3 -smt2 USAT_4_converted.smt
+sat
+(
+  (define-fun A () Bool
+    false)
+  (define-fun D () Bool
+    true)
+  (define-fun B () Bool
+    false)
+  (define-fun x1 () Bool
+    true)
+  (define-fun C () Bool
+    false)
+)
+
